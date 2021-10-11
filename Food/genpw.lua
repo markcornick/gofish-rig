@@ -1,5 +1,5 @@
 local name = "genpw"
-local version = "4.0.1"
+local version = "4.1.0"
 
 food = {
     name = name,
@@ -9,62 +9,10 @@ food = {
     version = version,
     packages = {
 		{
-            os = "darwin",
-            arch = "amd64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Darwin_x86_64.tar.gz",
-            sha256 = "0f4a507e1b1aeacc94ab910348458adecb0fc7050597e8431f4953d266dbe6dd",
-            resources = {
-                {
-                    path = name,
-                    installpath = "bin/" .. name,
-                    executable = true
-                }
-            }
-        },
-		{
-            os = "linux",
-            arch = "amd64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Linux_x86_64.tar.gz",
-            sha256 = "9747efee0000b9b0fab412868ce1ecb60425614957b07c88ce276569658eded8",
-            resources = {
-                {
-                    path = name,
-                    installpath = "bin/" .. name,
-                    executable = true
-                }
-            }
-        },
-		{
-            os = "linux",
-            arch = "arm",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Linux_armv6.tar.gz",
-            sha256 = "60135326443211139b78772c57b13b766615c3d4de7b61fd36c253527a4f3981",
-            resources = {
-                {
-                    path = name,
-                    installpath = "bin/" .. name,
-                    executable = true
-                }
-            }
-        },
-		{
-            os = "linux",
-            arch = "arm64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Linux_arm64.tar.gz",
-            sha256 = "a13f5180f811372eb337fad21683091cb81072908c375727349a0390dd411549",
-            resources = {
-                {
-                    path = name,
-                    installpath = "bin/" .. name,
-                    executable = true
-                }
-            }
-        },
-		{
             os = "windows",
             arch = "amd64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Windows_x86_64.tar.gz",
-            sha256 = "076d241867c3cb5727e3bba4a4d4a7a19ef96e5651118c382de5376f9f706624",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_windows_amd64.tar.gz",
+            sha256 = "3f20099467742e9bbf21f970728e335c11074f44ca2fa32278daeae67561693b",
             resources = {
                 {
                     path = name .. ".exe",
@@ -73,10 +21,23 @@ food = {
             }
         },
 		{
+            os = "linux",
+            arch = "arm",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_linux_armv6.tar.gz",
+            sha256 = "6a7fdf9114fb6ee0dc5b3605866237aeec1fe481c7704cb28a44e8a3aab60093",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
             os = "windows",
             arch = "arm",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Windows_armv6.tar.gz",
-            sha256 = "f13f085ff7c7c9b1eaa6e2dc1c4ae6f9a266517a079b5e5c3a501cbaecf2b46d",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_windows_armv6.tar.gz",
+            sha256 = "f2fcca19484e5238195834ef6b8147e62b9b45819dc359257a2920e1fbc7317e",
             resources = {
                 {
                     path = name .. ".exe",
@@ -87,8 +48,21 @@ food = {
 		{
             os = "darwin",
             arch = "arm64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Darwin_arm64.tar.gz",
-            sha256 = "1e3cf7d501cc07bdc0b97109b910594a89f0ed13890df4b5da036f9f08aef8b2",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_darwin_arm64.tar.gz",
+            sha256 = "d3aa4cf90c5cc2cb8a56f526afd0ffcbb736fb383f8f7b6fdbe86038b80a7b08",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_linux_amd64.tar.gz",
+            sha256 = "c638eaf5e40dc5de12b2fd8c7d77f5cb7876159acb3d9c3f49c133097dcc9b0b",
             resources = {
                 {
                     path = name,
@@ -100,12 +74,38 @@ food = {
 		{
             os = "windows",
             arch = "arm64",
-            url = "https://github.com/markcornick/genpw/releases/download/v4.0.1/genpw_4.0.1_Windows_arm64.tar.gz",
-            sha256 = "557aa33993e73de265355a7e04642a386ff68c3587aad301f04ac21c499be4c7",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_windows_arm64.tar.gz",
+            sha256 = "2f4ffc517d98a7557bda606647fcd234eada7ad97f0cc18e8e2f5e6601642193",
             resources = {
                 {
                     path = name .. ".exe",
                     installpath = "bin\\" .. name .. ".exe"
+                }
+            }
+        },
+		{
+            os = "darwin",
+            arch = "amd64",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_darwin_amd64.tar.gz",
+            sha256 = "0b9d9dd4e47fa6a7a513c2c3cb2fdd355b51eb7c225f4de71581ae7074484781",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
+                }
+            }
+        },
+		{
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com/markcornick/genpw/releases/download/v4.1.0/genpw_4.1.0_linux_arm64.tar.gz",
+            sha256 = "80efdd07036c8232b919b0ba85b4a6e688ce7fdb48fe5dc0bd6aac7feb93125a",
+            resources = {
+                {
+                    path = name,
+                    installpath = "bin/" .. name,
+                    executable = true
                 }
             }
         },
